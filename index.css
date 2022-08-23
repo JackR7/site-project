@@ -63,11 +63,12 @@ body{
     .container{
         background-color: rgb(35, 32, 90);
         padding: 150px 0;
+        display: flex;
+        flex-direction: row;
     }
 
     .container.row{
-        display: flex;
-        flex-direction: row;
+       
     }
 
     .container-row-sign h2, h3{
