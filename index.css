@@ -5,15 +5,35 @@ body{
 .header{
     display: flex;
     flex-direction: row;
-    background-color: rgb(2, 61, 172);
+    background-color: rgb(27, 78, 173);
     justify-content: space-between;
+    height: 100px;
+    padding: 20px 0;
 }
 
-    .logo{
+    .logo-container{
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding: 0 40px;
         color: white;
+    }
+
+    .logo-pic{
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        width: auto;
+        padding: 5px;
+    }
+
+    .logo-sign{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-style: italic;
+        font-size: 40px;
+        
     }
 
     .header-list{
