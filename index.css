@@ -55,6 +55,10 @@ body{
 
 /* ----------------------------------------------------- */
 
+button{
+    cursor: pointer;
+}
+
 .body{
     display: flex;
     justify-content: center;
@@ -67,46 +71,93 @@ body{
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 30px 350px;
         gap: 10px;
+        padding: 60px 380px;
     }
 
     .container-sign{
         display: flex;
         flex-direction: column;
+        flex-grow: 2;
     }
 
-    .container-sign h1, 
-    .container-sign h3, 
-    .container-sign p{
-        color: rgb(255, 255, 255);
-    }
+        .container-sign h1, 
+        .container-sign h3, 
+        .container-sign p{
+            color: rgb(255, 255, 255);
+        }
 
-    .container-sign h1{
-        font-size: 45px;
-        font-weight: bold;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-bottom: 0;
-    }
- 
-    .container-sign h3{
-        margin-top: 0px;
-        font-style: italic;
-    }
+        .container-sign h1{
+            text-align: left;
+            font-size: 65px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-bottom: 0;
+        }
+    
+        .container-sign h3{
+            text-align: left;
+            margin-top: 0px;
+            font-style: italic;
+            font-size: 25px;
+        }
 
-    .container-sign h1,
-    .container-sign h3{
+        .container-sign h1,
+        .container-sign h3{
+            position: relative;
+            top: -40px;
+
+        }
+
+        .container-sign p{
         position: relative;
         top: -40px;
+        text-align: left;
+        font-family: cursive;
+        font-size: 15px;
+        }
 
-    }
+        .container-sign-button-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 5px;
+            padding: 0 30%;
+        }
 
-    .container-sign p{
-       padding-right: 150px;
+        .container-sign-button{
+          width: 100px;
+          height: 35px;
+          background-color: rgb(51, 138, 179);
+          border-radius: 10px;
+          color: white;
+          font-weight: 700;
+        }
+
+            .container-sign-button:hover{
+                background-color: rgb(6, 34, 48);
+            }
+
+        .container-register-button{
+            width: 100px;
+            height: 35px;
+            background-color: rgb(51, 138, 179);
+            border-radius: 10px;
+            color: white;
+            font-weight: 700;
+          }
+
+          .container-register-button:hover{
+            background-color: rgb(6, 34, 48);
+        }
+
+    .container-img{
+        flex-grow: 3;
     }
 
     .container-img img{
         height: auto;
         width: 325px;
         border-radius: 10%;
+
     }
