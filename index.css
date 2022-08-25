@@ -200,11 +200,13 @@ button{
             object-fit: fill;
             width: 300px;
             height: 200px;
-            border-radius: 15px;
         }
 
         .dishes-row img:hover{
-            border: 1px solid blue;
+            border: 2px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to left, blue, rgb(5, 5, 36));
+            border-width: 5px;
             transform: scale(1.1);
             cursor: pointer;
         }
