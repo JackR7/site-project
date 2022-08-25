@@ -170,13 +170,15 @@ button{
 
     .dish-body{
         background-color: rgb(202, 215, 238);
-        padding: 5% 0;
+        padding-top: 2%;
+        padding-bottom: 5%;
     }
 
-    .container2 .title{
+    .container2 h1{
         text-align: center;
-        display: flex;
-        align-items: flex-start;
+        position: relative;
+        top: 40%;
+        font-size: 40px;
     }
 
     .dishes-row{
@@ -186,8 +188,20 @@ button{
         gap: 2%;
     }
 
+        .dishes-row p{
+            text-align: center;
+            font-size: 20px;
+        }
+
         .dishes-row img{
             object-fit: fill;
             width: 300px;
             height: 200px;
+            border-radius: 15px;
+        }
+
+        .dishes-row img:hover{
+            border: 1px solid blue;
+            transform: scale(1.1);
+            cursor: pointer;
         }
