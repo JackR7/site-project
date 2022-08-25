@@ -164,3 +164,30 @@ button{
         border-radius: 10%;
 
     }
+
+
+    /* ----------------------------------------------------- */
+
+    .dish-body{
+        background-color: rgb(202, 215, 238);
+        padding: 5% 0;
+    }
+
+    .container2 .title{
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .dishes-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2%;
+    }
+
+        .dishes-row img{
+            object-fit: fill;
+            width: 300px;
+            height: 200px;
+        }
