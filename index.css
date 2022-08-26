@@ -130,7 +130,7 @@ button{
             padding: 0 20%;
         }
 
-        .container-sign-button{
+        .container-sign-button-box button{
           width: 100px;
           height: 35px;
           background-color: rgb(51, 138, 179);
@@ -140,23 +140,9 @@ button{
           border: 1px solid black;
         }
 
-            .container-sign-button:hover{
+            .container-sign-button-box button:hover{
                 background-color: rgb(2, 87, 129);
             }
-
-        .container-register-button{
-            width: 100px;
-            height: 35px;
-            background-color: rgb(51, 138, 179);
-            border-radius: 10px;
-            color: white;
-            font-weight: 700;
-            border: 1px solid black;
-          }
-
-          .container-register-button:hover{
-            background-color: rgb(2, 87, 129);
-        }
 
     .container-img{
         flex-grow: 3;
