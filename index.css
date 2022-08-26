@@ -191,24 +191,62 @@ button{
         flex-direction: row;
         justify-content: center;
         gap: 2%;
+        
     }
 
+
+        .first-dish-container,
+        .meat-container,
+        .fish-container,
+        .dessert-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .first-dish-container button{
+                height: 15%;
+                width: 40%;
+                margin-top: 5%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                position: relative;
+            }
+
+        .dishes-row .first-dish,
+        .dishes-row .meat,
+        .dishes-row .fish,
+        .dishes-row .dessert{
+            overflow: hidden;
+            border: 2px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to left, blue, rgb(5, 5, 36));
+            border-width: 5px;
+        }
+
+
         .dishes-row p{
+          
             text-align: center;
             font-size: 20px;
+            
         }
 
         .dishes-row img{
             object-fit: fill;
             width: 300px;
             height: 200px;
+            transition: transform .5s ease;
+            margin-bottom: -10px;
+            
         }
 
         .dishes-row img:hover{
-            border: 2px solid;
-            border-image-slice: 1;
-            border-image-source: linear-gradient(to left, blue, rgb(5, 5, 36));
-            border-width: 5px;
+            overflow: hidden;
             transform: scale(1.1);
+            background-color: gray;
+            -webkit-filter: brightness(0.5);
+            filter: brightness(0.7);
             cursor: pointer;
         }
